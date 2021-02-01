@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.avr128da48-cnano-biphase-mplab-mcc",
-        "version": "1.0.0",
-        "displayName": "AVR128DA48 Bi-phase Encoder and Decoder Using Core Independent Peripherals (CIPs)",
+        "version": "1.0.1",
+        "displayName": "Bi-phase Encoder and Decoder Using Core Independent Peripherals",
         "projectName": "avr128da48-cnano-biphase-mplab-mcc",
         "shortDescription": "This repository contains Bi-phase Encoder and Decoder using CIPs: TCB, USART, Event System, CCL, and SPI peripherals",
         "ide": {
@@ -39,7 +39,8 @@
         "author": "Microchip",
         "subcategories": [
 			[
-				"peripherals", "CCL"
+				"Peripherals",
+				"CCL"
 			]
 		],
         "peripherals": [ "CCL"

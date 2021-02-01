@@ -1,4 +1,3 @@
-<!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
 # AVR128DA48 Bi-phase Encoder and Decoder Using Core Independent Peripherals (CIPs)
