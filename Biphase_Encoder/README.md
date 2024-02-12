@@ -54,11 +54,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Oscillator Frequency Selection: 4 MHz system clock (default)
   <br><img src="../images/encoder-mcc-clkctrl.png" width="400">
 
-2. Interrupt Manager:
-  - Global Interrupt Enable: Enabled
-  - USART1 RXC: Enabled
-
-3. USART1:
+2. USART1:
   - UART PLIB Selector: USART1
   - Requested Baudrate: 38400
   - Data Size: 8
@@ -69,7 +65,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Receive Interrupt Enable: Enabled
   <br><img src="../images/encoder-mcc-usart1.png" width="400">
 
-4. SPI0:
+3. SPI0:
   - SPI Host PLIB Selector: SPI0
   - SPI0 Type: Host
   - SPI0 Mode: Mode 1
@@ -77,7 +73,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Requested Speed (kHz): 31.25 (31250 Hz)
   <br><img src="../images/encoder-mcc-spi0.png" width="400">
 
-5. EVSYS:
+4. EVSYS:
   - Event Generators:
     - CCL_LUT0: CHANNEL0
     - CCL_LUT2: CHANNEL1
@@ -161,6 +157,11 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
     - Gate Type: Custom
     - OUT result: 0x01
 
+6. Interrupt Manager:
+  - Global Interrupt Enable: Enabled
+  - USART1 RXC: Enabled
+
+  
  |Pin                       | Configuration      |
  | :---------------------:  | :----------------: |
  |     PA4 (SPI0 - MOSI)    |   Digital Output   |

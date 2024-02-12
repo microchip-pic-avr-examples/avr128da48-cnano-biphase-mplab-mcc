@@ -53,15 +53,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Oscillator Frequency Selection: 24 MHz system clock
   <br><img src="../images/decoder-mcc-clkctrl.png" width="400">
 
-2. Interrupt Manager:
-  - Global Interrupt Enable: Enabled
-  - SPI0 IE: Enabled
-  - SPI0 RXC: Enabled
-  - TCA0 OVFI: Enabled
-  - TCB2 CAPT: Enabled
-  - TCB3 CAPT: Enabled
-
-3. USART1:
+2. USART1:
   - UART PLIB Selector: USART1
   - Enable USART Transmitter: Enabled
   - Requested Baudrate: 57600
@@ -70,15 +62,15 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Redirect Printf to UART: Enabled
   <br><img src="../images/decoder-mcc-usart1.png" width="400">
 
-4. SPI0:
-  - SPI Host PLIB Selector: SPI0
+3. SPI0:
+  - SPI Client PLIB Selector: SPI0
   - SPI0 Type: Client
   - SPI0 Mode: Mode 3
   - Config Name: CLIENT_CONFIG
   - Interrupt Driven: Enabled
   <br><img src="../images/decoder-mcc-spi0.png" width="400">
 
-5. EVSYS:
+4. EVSYS:
   - Event Generators:
     - CCL_LUT4:  CHANNEL0
     - TCB0_CAPT: CHANNEL1
@@ -92,7 +84,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
     - CHANNEL3: CCLLUT5A
     - CHANNEL4: TCB2CAPT
 
-6. CCL:
+5. CCL:
   - Enable CCL: Enabled
   - LUT0:
     - Enable LUT: Enabled
@@ -166,7 +158,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
     - Gate Type: Custom
     - OUT result: 0x1
 
-7. TCA0:
+6. TCA0:
   - Enable Timer: Enabled
   - Clock Selection: System Clock
   - Timer Mode: 16 Bit (Normal)
@@ -178,7 +170,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Waveform Generation Mode: Enabled
   <br><img src="../images/decoder-mcc-tca0.png" width="400">
 
-8. TCB0:
+7. TCB0:
   - Enable Timer: Enabled
   - Clock Selection: DIV1
   - Timer Mode: Single
@@ -189,7 +181,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Enable Pin Output: Enabled
   <br><img src="../images/decoder-mcc-tcb0.png" width="400">
 
-9. TCB1:
+8. TCB1:
   - Enable Timer: Enabled
   - Clock Selection: DIV1
   - Timer Mode: Single
@@ -198,7 +190,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Enable Event Input Capture: Enabled
   <br><img src="../images/decoder-mcc-tcb1.png" width="400">
 
-10. TCB2:
+9. TCB2:
   - Enable Timer: Enabled
   - Clock Selection: DIV1
   - Timer Mode: Single
@@ -210,7 +202,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   <br><img src="../images/decoder-mcc-tcb2.png" width="400">
 
 
-11. TCB3:
+10. TCB3:
   - Enable Timer: Enabled
   - Clock Selection: DIV1
   - Timer Mode: Single
@@ -221,6 +213,16 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
   - Generate ISR: Enabled
   - Enable Capture/Timeout Interrupt: Enabled
   <br><img src="../images/decoder-mcc-tcb3.png" width="400">
+
+
+11. Interrupt Manager:
+  - Global Interrupt Enable: Enabled
+  - SPI0 IE: Enabled
+  - SPI0 RXC: Enabled
+  - TCA0 OVFI: Enabled
+  - TCB2 CAPT: Enabled
+  - TCB3 CAPT: Enabled
+
 
 
  |Pin                       | Configuration      |
